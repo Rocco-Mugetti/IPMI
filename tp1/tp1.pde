@@ -1,3 +1,6 @@
+// Rocco Mugetti Legajo 121136/9
+// Comision 3 Autoretrato
+
 PImage img;
 
 void setup() {
