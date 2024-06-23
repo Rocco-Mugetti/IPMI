@@ -1,7 +1,7 @@
 //Rocco Mugetti 
 //Legajo 121136/9
 //Comision 3 , TP3: "Op Art"
-
+// https://www.youtube.com/watch?v=FztPd3VpFFA
 
 PImage img;                             // Declaración de la variable para la imagen
 int cantX = 10;                         // Cantidad de filas de la grilla
