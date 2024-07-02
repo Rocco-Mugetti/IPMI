@@ -46,11 +46,21 @@ void Circulos(){                       // En esta funcion estan los circulos que
 } else  {
  fill(0); 
 }
-      
+
+color colorPorDistancia (float d_ ) {
+  float factor = map(d_,0,400,0,1);
+   color col1 = color(255,0,0);
+   color col2 = color(0,25,0);
+  return lerpColor(col1,col2,factor);
+}
+
  // Calculo el centro de los cuadrados
  float centerX = 400 + x*modX + modX/2 + animacionX;
  float centerY = y*modY + modY/2 + animacionY;
-      
+float distancia = dist(centerX, centerY,mouseX, mouseY);
+fill(colorPorDistancia(distancia));
+
+
  // Dibujo el ellipse dentro del cuadrado
  ellipse(centerX, centerY, modX/2, modY/2);
 }
